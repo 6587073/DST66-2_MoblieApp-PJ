@@ -17,7 +17,8 @@ class Iphone1316Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: theme.colorScheme.onPrimaryContainer,
+        // backgroundColor: theme.colorScheme.onPrimaryContainer,
+        backgroundColor: theme.colorScheme.onPrimaryContainer.withOpacity(1),
         body: SizedBox(
           width: double.maxFinite,
           child: Column(
@@ -140,6 +141,7 @@ class Iphone1316Screen extends StatelessWidget {
                 ),
                 SizedBox(height: 9.v),
                 SizedBox(
+
                   width: 81.h,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -167,7 +169,8 @@ class Iphone1316Screen extends StatelessWidget {
                                   child: VerticalDivider(
                                     width: 1.h,
                                     thickness: 1.v,
-                                    color: theme.colorScheme.onPrimaryContainer,
+                                    // color: theme.colorScheme.onPrimaryContainer,
+                                    color: appTheme.green500,
                                     indent: 9.h,
                                   ),
                                 ),

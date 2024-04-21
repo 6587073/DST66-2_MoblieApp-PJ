@@ -27,7 +27,8 @@ class Iphone1315PageState extends State<Iphone1315PageWarn>
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: theme.colorScheme.onPrimaryContainer,
+        // backgroundColor: theme.colorScheme.onPrimaryContainer,
+        backgroundColor: theme.colorScheme.onPrimaryContainer.withOpacity(1),
         body: SizedBox(
           width: SizeUtils.width,
           child: SingleChildScrollView(
