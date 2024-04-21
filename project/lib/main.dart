@@ -7,26 +7,36 @@ import 'firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 var globalMessengerKey = GlobalKey<ScaffoldMessengerState>();
-void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-  ThemeHelper().changeTheme('primary');
-
-  // Firebase.initializeApp();
-  // Firebase.initializeApp();
-
-  runApp(MyApp());
-}
-
-// void main() async {
+// void main() {
 //   WidgetsFlutterBinding.ensureInitialized();
 //   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 //   ThemeHelper().changeTheme('primary');
-//   await Firebase.initializeApp(
-//     options: DefaultFirebaseOptions.currentPlatform,
-//   );
+
+//   // Firebase.initializeApp();
+//   // Firebase.initializeApp();
+
 //   runApp(MyApp());
-// } 
+// }
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  ThemeHelper().changeTheme('primary');
+  await Firebase.initializeApp(
+    options: FirebaseOptions(
+      appId: '1:240282301798:android:83d044874f088b974ac4a7',
+      apiKey: 'AIzaSyAVDfQVQo1QsazA94FqkT6-3_xBRg4pZRs',
+      messagingSenderId: 'your_messaging_sender_id', // ไม่มีข้อมูลใน Json ที่คุณแสดง
+      projectId: 'moneymetang-1b9cd',
+      storageBucket: 'moneymetang-1b9cd.appspot.com',
+      databaseURL: 'your_database_url', // ไม่มีข้อมูลใน Json ที่คุณแสดง
+    ),
+  );
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
+  runApp(MyApp());
+} 
 
 class MyApp extends StatelessWidget {
   @override

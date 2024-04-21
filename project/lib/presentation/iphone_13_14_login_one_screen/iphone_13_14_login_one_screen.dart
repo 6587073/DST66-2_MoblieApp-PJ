@@ -69,8 +69,8 @@ class Iphone1314LoginOneScreen extends StatelessWidget {
                     SizedBox(height: 29.v),
                     _buildSignup(context),
                     SizedBox(height: 29.v),
-                    _buildButtonRow(context),
-                    SizedBox(height: 31.v),
+                    // _buildButtonRow(context),
+                    // SizedBox(height: 31.v),
                     _buildLinefield(context),
                     SizedBox(height: 9.v),
                     _buildSingnupwith(context),
@@ -493,32 +493,32 @@ class Iphone1314LoginOneScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildButtonRow(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(vertical: 10),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          // _buildButton(context, "รายรับ", onTapIncome),
-          // _buildButton(context, "รายจ่าย", onTapExpense),
-        _buildButton(context, "รายรับ", () => onTapIncome(context)), // ส่ง BuildContext เข้าไปใน onTapIncome
-        _buildButton(context, "รายจ่าย", () => onTapExpense(context)), // ส่ง BuildContext เข้าไปใน onTapExpense
+  // Widget _buildButtonRow(BuildContext context) {
+  //   return Padding(
+  //     padding: EdgeInsets.symmetric(vertical: 10),
+  //     child: Row(
+  //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  //       children: [
+  //         // _buildButton(context, "รายรับ", onTapIncome),
+  //         // _buildButton(context, "รายจ่าย", onTapExpense),
+  //       _buildButton(context, "รายรับ", () => onTapIncome(context)), // ส่ง BuildContext เข้าไปใน onTapIncome
+  //       _buildButton(context, "รายจ่าย", () => onTapExpense(context)), // ส่ง BuildContext เข้าไปใน onTapExpense
         
-        ],
-      ),
-    );
-  }
+  //       ],
+  //     ),
+  //   );
+  // }
 
-  Widget _buildButton(
-      BuildContext context, String text, VoidCallback onPressed) {
-    return ElevatedButton(
-      // onPressed: onPressed,
-      onPressed: () {
-        onPressed(); // เรียกใช้ onPressed โดยไม่ส่งพารามิเตอร์
-      },
-      child: Text(text),
-    );
-  }
+  // Widget _buildButton(
+  //     BuildContext context, String text, VoidCallback onPressed) {
+  //   return ElevatedButton(
+  //     // onPressed: onPressed,
+  //     onPressed: () {
+  //       onPressed(); // เรียกใช้ onPressed โดยไม่ส่งพารามิเตอร์
+  //     },
+  //     child: Text(text),
+  //   );
+  // }
 
   onTapSignupButton(BuildContext context) {
     // iphone1314screenedit
