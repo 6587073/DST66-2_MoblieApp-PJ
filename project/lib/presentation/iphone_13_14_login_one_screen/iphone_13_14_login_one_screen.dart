@@ -499,16 +499,23 @@ class Iphone1314LoginOneScreen extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          _buildButton(context, "รายรับ", onTapIncome),
-          _buildButton(context, "รายจ่าย", onTapExpense),
+          // _buildButton(context, "รายรับ", onTapIncome),
+          // _buildButton(context, "รายจ่าย", onTapExpense),
+        _buildButton(context, "รายรับ", () => onTapIncome(context)), // ส่ง BuildContext เข้าไปใน onTapIncome
+        _buildButton(context, "รายจ่าย", () => onTapExpense(context)), // ส่ง BuildContext เข้าไปใน onTapExpense
+        
         ],
       ),
     );
   }
 
-  Widget _buildButton(BuildContext context, String text, onPressed) {
+  Widget _buildButton(
+      BuildContext context, String text, VoidCallback onPressed) {
     return ElevatedButton(
-      onPressed: onPressed,
+      // onPressed: onPressed,
+      onPressed: () {
+        onPressed(); // เรียกใช้ onPressed โดยไม่ส่งพารามิเตอร์
+      },
       child: Text(text),
     );
   }
@@ -519,12 +526,12 @@ class Iphone1314LoginOneScreen extends StatelessWidget {
     Navigator.pushNamed(context, AppRoutes.iphone1314Page);
   }
 
-  onTapIncome(BuildContext context) {
+  void onTapIncome(BuildContext context) {
     // จัดการการกดปุ่ม "รายรับ" ตรงนี้
     Navigator.pushNamed(context, AppRoutes.iphone1314Page);
   }
 
-  onTapExpense(BuildContext context) {
+  void onTapExpense(BuildContext context) {
     // จัดการการกดปุ่ม "รายจ่าย" ตรงนี้
     Navigator.pushNamed(context, AppRoutes.iphone1314Page);
   }
