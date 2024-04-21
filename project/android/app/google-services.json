@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "240282301798",
+    "project_id": "moneymetang-1b9cd",
+    "storage_bucket": "moneymetang-1b9cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240282301798:android:83d044874f088b974ac4a7",
+        "android_client_info": {
+          "package_name": "com.example.firebase_demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVDfQVQo1QsazA94FqkT6-3_xBRg4pZRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240282301798:android:fd304c784e8352de4ac4a7",
+        "android_client_info": {
+          "package_name": "com.kantinunaundeesapplication.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVDfQVQo1QsazA94FqkT6-3_xBRg4pZRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,78 @@
+name: kantinunaundee_s_application1
+description: A new Flutter project.
+version: 1.0.0+1
+environment: 
+  sdk: '>=2.12.0 <3.0.0'
+dependencies: 
+  flutter: 
+    sdk: flutter
+  flutter_localizations: 
+    sdk: flutter
+  cached_network_image: ^3.3.0
+  flutter_svg: ^2.0.9
+  calendar_date_picker2: ^0.5.3
+  flutter_svg_provider: ^1.0.7
+  intl: ^0.18.0
+  connectivity_plus: ^5.0.2
+  form_field_validator: ^1.1.0
+  firebase_core: ^2.30.0
+  cloud_firestore: ^4.17.0
+dev_dependencies: 
+  flutter_test: 
+    sdk: flutter
+flutter: 
+  uses-material-design: true
+  assets: 
+    - assets/
+    - assets/images/
+
+    
+
+    - assets/images/img_image_7.png
+  fonts: 
+    - family: Barlow
+      fonts: 
+        - asset: assets/fonts/BarlowRegular.ttf
+          weight: 400
+    - family: Inter
+      fonts: 
+        - asset: assets/fonts/InterMedium.ttf
+          weight: 500
+        - asset: assets/fonts/InterSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/InterBold.ttf
+          weight: 700
+    - family: Manrope
+      fonts: 
+        - asset: assets/fonts/ManropeBold.ttf
+          weight: 700
+        - asset: assets/fonts/ManropeSemiBold.ttf
+          weight: 600
+    - family: Poppins
+      fonts: 
+        - asset: assets/fonts/PoppinsRegular.ttf
+          weight: 400
+        - asset: assets/fonts/PoppinsSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/PoppinsMedium.ttf
+          weight: 500
+    - family: Sarabun
+      fonts: 
+        - asset: assets/fonts/SarabunSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/SarabunMedium.ttf
+          weight: 500
+        - asset: assets/fonts/SarabunRegular.ttf
+          weight: 400
+        - asset: assets/fonts/SarabunBold.ttf
+          weight: 700
+    - family: Peralta
+      fonts: 
+        - asset: assets/fonts/PeraltaRegular.ttf
+          weight: 400
+    - family: Roboto
+      fonts: 
+        - asset: assets/fonts/RobotoRomanMedium.ttf
+          weight: 500
+        - asset: assets/fonts/RobotoRomanRegular.ttf
+          weight: 400
